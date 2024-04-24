@@ -21,7 +21,7 @@ resource "azurerm_storage_container" "demo-storage-container-tf" {
 }
 
 #uploads a file/blob into the above created container
-resource "azurerm_storage_blob" "mysql_chart_file" {
+resource "azurerm_storage_blob" "my-file-demo" {
   name                   = "my-file-name-and-its.extention"
   storage_account_name   = azurerm_storage_account.demo-storage-account-tf.name
   storage_container_name = azurerm_storage_container.demo-storage-container-tf.name
